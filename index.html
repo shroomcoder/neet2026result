@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Board — NEET UG 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-logo">SB</div>
+        <div class="preloader-text">Loading…</div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="hidden">
+        <div class="container">
+
+            <!-- Header -->
+            <div class="card-header">
+                <div class="header-top">
+                    <div class="nta-badge">SB</div>
+                    <div class="header-titles">
+                        <h1>Score Board — NEET UG 2026</h1>
+                        <h2>Unofficial Tally</h2>
+                    </div>
+                </div>
+                <div class="candidate-info">
+                    <span class="info-chip">
+                        <svg class="btn-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="8" cy="5.5" r="2.5" />
+                            <path d="M3 13c0-2.761 2.239-5 5-5s5 2.239 5 5" stroke-linecap="round" />
+                        </svg>
+                        <strong>Manish Bhoumik</strong>
+                    </span>
+                    <span class="info-chip">
+                        <svg class="btn-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="12" height="10" rx="1.5" />
+                            <path d="M5 3V2M11 3V2M2 7h12" stroke-linecap="round" />
+                        </svg>
+                        Roll No: <strong>220410XXXX</strong>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Body -->
+            <div class="card-body">
+
+                <div class="section-label">Subject-wise Marks</div>
+
+                <!-- Marks Table -->
+                <div class="marksheet-wrapper">
+                    <table class="marksheet">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Max Marks</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="subject-name">Physics</td>
+                                <td class="max-marks">180</td>
+                                <td><span class="glitter-blur">165</span></td>
+                            </tr>
+                            <tr>
+                                <td class="subject-name">Chemistry</td>
+                                <td class="max-marks">180</td>
+                                <td><span class="glitter-blur">158</span></td>
+                            </tr>
+                            <tr>
+                                <td class="subject-name">Biology (Botany &amp; Zoology)</td>
+                                <td class="max-marks">360</td>
+                                <td><span class="glitter-blur">342</span></td>
+                            </tr>
+                            <tr class="total-row">
+                                <td class="subject-name">Total Marks</td>
+                                <td class="max-marks">720</td>
+                                <td><span class="glitter-blur">665</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="section-label">Result Summary</div>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <span class="item-label">Expected AIR</span>
+                        <span class="item-value glitter-blur"></span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="item-label">Expected Percentile</span>
+                        <span class="item-value glitter-blur"></span>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="actions">
+                    <button id="reveal-btn">
+                        <svg class="btn-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M8 3C4.5 3 1.5 8 1.5 8S4.5 13 8 13s6.5-5 6.5-5S11.5 3 8 3z" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <circle cx="8" cy="8" r="2" />
+                        </svg>
+                        Reveal Score
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Rickroll Video Overlay -->
+    <div id="video-overlay" class="hidden">
+        <video id="rickroll-video" preload="auto" playsinline>
+            <source src="assets/roll-480.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
