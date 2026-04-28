@@ -5,13 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoOverlay = document.getElementById('video-overlay');
     const video = document.getElementById('rickroll-video');
 
-    // 1. Preloader Logic: Wait for video to load
     video.addEventListener('canplaythrough', () => {
         preloader.classList.add('hidden');
         mainContent.classList.remove('hidden');
     }, { once: true });
 
-    // Fallback: show content after 3 seconds if video is slow
     setTimeout(() => {
         if (!preloader.classList.contains('hidden')) {
             preloader.classList.add('hidden');
@@ -19,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, 3000);
 
-    // 2. Rickroll Trigger
     revealBtn.addEventListener('click', async () => {
         try {
             if (videoOverlay.requestFullscreen) {
